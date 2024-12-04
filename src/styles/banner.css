@@ -1,0 +1,13 @@
+.banner {
+  position: relative;
+  width: 100%;
+}
+.banner h1 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}/*# sourceMappingURL=banner.css.map */

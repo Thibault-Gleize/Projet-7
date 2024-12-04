@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Medium";
+  src: url("../assets/fonts/static/Montserrat-Medium.ttf");
+}
+body {
+  margin: 0;
+  font-family: "Medium";
+}
+
+header, main {
+  padding: 0px 6% 0px 6%;
+}/*# sourceMappingURL=general.css.map */
