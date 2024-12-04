@@ -6,8 +6,24 @@
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 50%;
+  top: 50px;
   left: 0;
   right: 0;
   text-align: center;
+  color: white;
+  font-size: 48px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 223px;
+  width: 100%;
+  border-radius: 25px;
+  filter: brightness(50%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.banner h1, .banner img {
+  stroke: black;
+  stroke-width: 1px;
 }/*# sourceMappingURL=banner.css.map */
