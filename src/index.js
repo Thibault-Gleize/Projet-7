@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Apropos from './pages/About';
 import './styles/styles.scss'
@@ -15,6 +16,7 @@ root.render(
         <Route path='/' element={<Home />} /> 
         <Route path='a-propos' element={<Apropos />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );

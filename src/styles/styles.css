@@ -11,12 +11,6 @@ header, main {
   padding: 0px 6% 0px 6%;
 }
 
-.container {
-  background-color: #F6F6F6;
-  border-radius: 25px;
-  padding: 56px 50px;
-}
-
 header {
   margin: 45px 0px 50px 0px;
   display: flex;
@@ -69,4 +63,42 @@ a {
 .banner h1, .banner img {
   stroke: black;
   stroke-width: 1px;
+}
+
+.container {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding: 56px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  background-color: #FF6060;
+  width: 340px;
+  height: 340px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card h2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  color: white;
+  margin: 0px 20px 20px 20px;
+}
+
+.card, img {
+  border-radius: 10px;
 }/*# sourceMappingURL=styles.css.map */

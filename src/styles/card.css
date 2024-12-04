@@ -2,8 +2,9 @@
   background-color: #F6F6F6;
   border-radius: 25px;
   padding: 56px 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 50px;
   -moz-column-gap: 60px;
        column-gap: 60px;
