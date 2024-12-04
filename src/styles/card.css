@@ -10,6 +10,9 @@
        column-gap: 60px;
   margin-bottom: 50px;
 }
+.container a {
+  padding: 0px;
+}
 
 .card {
   position: relative;
