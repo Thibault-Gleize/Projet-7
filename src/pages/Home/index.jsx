@@ -1,4 +1,5 @@
 import Banner from "../../components/Banner"
+import Card from "../../components/Card"
 
 export default function Home () {
 
@@ -7,9 +8,7 @@ export default function Home () {
     return (
         <main>
             <Banner />
-            <div className="container">
-                <h1>Hello World</h1>
-            </div>
+            <Card />
         </main>
     )
 }

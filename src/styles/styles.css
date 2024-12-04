@@ -7,9 +7,18 @@ body {
   font-family: "Medium";
 }
 
-.header {
+header, main {
   padding: 0px 6% 0px 6%;
-  margin-top: 45px;
+}
+
+.container {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding: 56px 50px;
+}
+
+header {
+  margin: 45px 0px 50px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,4 +38,35 @@ a {
 
 .active {
   text-decoration: underline;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  margin-bottom: 43px;
+}
+.banner h1 {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 223px;
+  width: 100%;
+  border-radius: 25px;
+  filter: brightness(50%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.banner h1, .banner img {
+  stroke: black;
+  stroke-width: 1px;
 }/*# sourceMappingURL=styles.css.map */
