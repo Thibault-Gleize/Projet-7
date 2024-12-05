@@ -69,12 +69,16 @@ a {
   background-color: #F6F6F6;
   border-radius: 25px;
   padding: 56px 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   row-gap: 50px;
   -moz-column-gap: 60px;
        column-gap: 60px;
   margin-bottom: 50px;
+}
+.container a {
+  padding: 0px;
 }
 
 .card {
@@ -101,4 +105,43 @@ a {
 
 .card, img {
   border-radius: 10px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 149px;
+  padding-top: 60px;
+}
+footer img {
+  width: 122px;
+  height: 40px;
+}
+footer p {
+  color: white;
+  font-size: 24px;
+}
+
+.about_container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about_container h2 {
+  text-align: center;
+}
+.about_container .about-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FF6060;
+}
+.about_container .about-title, .about_container span {
+  width: 78%;
+  height: 20px;
+  padding: 16px;
 }/*# sourceMappingURL=styles.css.map */
