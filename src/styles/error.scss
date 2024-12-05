@@ -1,0 +1,39 @@
+$header-color:#FF6060;
+$text-color:#FF6060;
+$link-color:black;
+
+.error-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2, p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    h2{
+        font-size: 288px;
+        color: $header-color;
+        margin-top: 139px;
+    }
+
+    p{
+        font-size: 36px;
+        color: $text-color;
+    }
+
+    a{
+        text-decoration: underline;
+        color: $link-color;
+        padding-left: 0;
+        margin-bottom: 131px;
+
+    }
+
+    h2, p{
+        margin-bottom: 139px;
+    }
+
+
+}
