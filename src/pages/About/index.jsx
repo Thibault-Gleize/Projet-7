@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner"
 import Collapse from "../../components/Collapse"
 
-const collapseInfo = [
+const aboutInfo = [
     {
         "title" : "Fiabilité",
         "info" : "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont confirmes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes",
@@ -26,7 +26,7 @@ export default function Apropos () {
     return (
         <main>
             <Banner />
-            {collapseInfo.map(({title, info, index}) => (
+            {aboutInfo.map(({title, info, index}) => (
                 <div className="about_container" key={`${title} - ${index}`}>
                     <Collapse name={title} description={info} />
                 </div> 
