@@ -1,5 +1,6 @@
 .slideshow {
   position: relative;
+  margin-bottom: 20px;
 }
 .slideshow .appt-picture {
   width: 100%;
@@ -30,4 +31,40 @@
   text-align: center;
   color: white;
   font-size: 18px;
+}
+
+.appt-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.appt-info__title-location h2 {
+  color: #FF6060;
+  font-size: 36px;
+}
+.appt-info__title-location p {
+  font-size: 18px;
+}
+.appt-info__title-location p, .appt-info__title-location h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.appt-info__owner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.appt-info__owner img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.appt-info__owner p {
+  color: #FF6060;
+  font-size: 18px;
+  width: 93px;
+  display: flex;
+  text-align: end;
 }/*# sourceMappingURL=logement.css.map */

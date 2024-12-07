@@ -1,7 +1,11 @@
 $slideshow-text-color:white;
+$primary-color: #FF6060;
+$span-bg-color: #F6F6F6;
+$title-color: white;
 
 .slideshow{
     position: relative;
+    margin-bottom: 20px;
 
     .appt-picture{
         width: 100%;
@@ -34,5 +38,211 @@ $slideshow-text-color:white;
         text-align: center;
         color: $slideshow-text-color;
         font-size: 18px;
+    }
+}
+
+.appt-info{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appt-info__title-location{
+
+    h2{
+        color: $primary-color;
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    p, h2{
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+}
+
+.appt-info__owner{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img{
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+    }
+
+    p{
+        color: $primary-color;
+        font-size: 18px;
+        width: 93px;
+        display: flex;
+        text-align: end;
+    }
+}
+
+.appt-info__tags-and-rate{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+        text-align: center;
+        font-size: 14px;
+        width: auto;
+        min-width: auto;
+    }
+
+    .tags{
+        display: flex;
+        gap: 10px;
+    }
+
+    .tag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: $primary-color;
+        min-height: 25px;
+        height: auto;
+        padding: 3px 40px;
+        max-width: 35px;
+        border-radius: 10px;
+    }
+}
+
+.rate{
+
+    div{
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+    }
+    
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.appt-info__equipement-and-description{
+    display: flex;
+    align-items: stretch;
+    gap: 76px;
+    margin-bottom: 42px;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 95%;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $primary-color;
+            height: 20px;
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        span{
+            background-color: $span-bg-color;
+            border-radius: 0px 0px 5px 5px;
+            position: relative;
+            bottom: 5px;
+            z-index: -1;
+            width: 95%;
+            padding: 16px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+    h2{
+        text-align: center;
+        color: $title-color;
+        font-size: 24px;
+    }
+
+    p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+
+    // version par défault 
+    .visible0{
+        display: none;
+    }
+
+    .visible1{
+        animation: show 0.25s linear;
+    }
+
+    .visible2{
+        animation: mask 0.25s linear forwards;
+    }
+
+    .rotate1{
+        animation: rotate-show 0.25s linear forwards;
+    }
+
+    .rotate2{
+        animation: rotate-mask 0.25s linear forwards;
+    }
+}
+
+@keyframes show {
+    from{
+        transform: translateY(-50px);
+        display: none;
+    }
+
+    to{
+        transform: translateY(0px);
+        display: block;
+    }
+}
+
+@keyframes mask {
+    from{
+        transform: translateY(0px);
+        display: block;
+    }
+    to{
+        transform: translateY(-50px);
+        display: none;
+    }
+}
+
+@keyframes rotate-show {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate-mask {
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(0);
     }
 }

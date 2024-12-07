@@ -2,7 +2,7 @@ import { useState } from "react"
 import leftArrow from "../../assets/left-arrow.svg"
 import rightArrow from '../../assets/right-arrow.svg'
 
-export default function Slideshow ({idLogement, dataAppt, apptId}) {
+export default function Slideshow ({apptId}) {
     // Création du tableau pour acceuillir les pictures de l'appt
     let picturesList = ["pictures"]
     // Permet de créer le tableau avec les images de l'appt
