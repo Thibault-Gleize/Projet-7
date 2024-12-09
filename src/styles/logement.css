@@ -76,22 +76,38 @@
   justify-content: space-between;
   margin-bottom: 24px;
 }
+@media (max-width: 768px) {
+  .appt-info {
+    flex-direction: column;
+  }
+}
 
-.appt-info__title-location h2 {
+.appt-info__title-location-tags h2 {
   color: #FF6060;
   font-size: 36px;
 }
-.appt-info__title-location p {
+@media (max-width: 768px) {
+  .appt-info__title-location-tags h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
+.appt-info__title-location-tags p {
   font-size: 18px;
   margin-bottom: 27px;
+}
+@media (max-width: 768px) {
+  .appt-info__title-location-tags p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 }
 
 .tags {
   display: flex;
   gap: 10px;
 }
-
-.tag {
+.tags .tag {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,8 +119,19 @@
   max-width: 35px;
   border-radius: 10px;
 }
-.tag p {
+@media (max-width: 768px) {
+  .tags .tag {
+    padding: 3px 24.5px;
+    min-height: 12px;
+  }
+}
+.tags .tag p {
   margin-bottom: 0;
+}
+@media (max-width: 768px) {
+  .tags .tag p {
+    font-size: 10px;
+  }
 }
 
 .appt-info__owner-and-rate {
@@ -113,44 +140,84 @@
   align-items: flex-end;
   justify-content: space-around;
 }
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+}
 .appt-info__owner-and-rate p {
-  margin-block-start: 0;
-  margin-block-end: 0;
   text-align: center;
   font-size: 14px;
   width: auto;
   min-width: auto;
 }
-
-.appt-info__owner {
+.appt-info__owner-and-rate .appt-info__owner {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.appt-info__owner img {
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .appt-info__owner {
+    order: 2;
+  }
+}
+.appt-info__owner-and-rate .appt-info__owner img {
   border-radius: 50%;
   width: 64px;
   height: 64px;
 }
-.appt-info__owner p {
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .appt-info__owner img {
+    width: 32px;
+    height: 32px;
+  }
+}
+.appt-info__owner-and-rate .appt-info__owner p {
   color: #FF6060;
   font-size: 18px;
   width: 93px;
   display: flex;
+  justify-content: end;
   text-align: end;
 }
-
-.rate div {
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .appt-info__owner p {
+    width: 45px;
+    font-size: 12px;
+    text-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .rate {
+    order: 1;
+  }
+}
+.appt-info__owner-and-rate .rate div {
   display: flex;
   flex-direction: row;
   gap: 4px;
 }
-.rate span {
+.appt-info__owner-and-rate .rate span {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 36px;
   height: 36px;
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .rate span {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .rate span img {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .appt-info__equipement-and-description {
@@ -159,12 +226,24 @@
   gap: 76px;
   margin-bottom: 42px;
 }
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .appt-info__equipement-and-description div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 95%;
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description div {
+    width: 97%;
+  }
 }
 .appt-info__equipement-and-description div div {
   display: flex;
@@ -174,6 +253,12 @@
   height: 20px;
   border-radius: 10px;
   padding: 16px;
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description div div {
+    padding: 11px;
+    height: 8px;
+  }
 }
 .appt-info__equipement-and-description div span {
   background-color: #F6F6F6;
@@ -187,6 +272,13 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  transform-origin: top center;
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description div span {
+    padding: 11px;
+    width: 97%;
+  }
 }
 .appt-info__equipement-and-description div .visible0 {
   display: none;
@@ -196,7 +288,19 @@
   color: white;
   font-size: 24px;
 }
-.appt-info__equipement-and-description p {
-  margin-block-start: 0;
-  margin-block-end: 0;
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description h2 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description img {
+    width: 16px;
+    height: 9px;
+  }
 }/*# sourceMappingURL=logement.css.map */

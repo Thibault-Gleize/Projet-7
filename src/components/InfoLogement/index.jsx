@@ -22,7 +22,7 @@ export default function InfoLogement ({apptId}) {
     return(
         <div>
             <div className="appt-info">
-                <div className="appt-info__title-location">
+                <div className="appt-info__title-location-tags">
                     <h2>{title}</h2>
                     <p>{location}</p>
                     <div className="tags">

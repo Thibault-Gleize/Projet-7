@@ -4,6 +4,10 @@ header{
     justify-content:space-between;
     align-items: center;
 
+    @media (max-width:768px) {
+        margin: 20px 0px 27px 0px;
+    }
+
     nav{
         display: flex;
         gap: 37px;
