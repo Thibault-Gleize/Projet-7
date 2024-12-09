@@ -7,15 +7,31 @@ $banner-h1-color:white;
 
     h1{
         position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        top: 50px;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
         left: 0;
         right: 0;
         text-align: center;
         color: $banner-h1-color;
         font-size: 48px;
         text-shadow: 0px 4px 4px (rgb(0, 0, 0, 25%));
+
+        @media (max-width : 1024px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+            text-align: start;
+            margin-left: 16px;
+            text-wrap: wrap;
+            width: 68%;
+            min-width: 225px;
+            max-height: 58px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 
     img{
@@ -25,6 +41,14 @@ $banner-h1-color:white;
         border-radius: 25px;
         filter: brightness(50%);
         box-shadow: 0px 4px 4px (rgb(0, 0, 0, 25%));
+
+        @media (max-width : 1024px) {
+            height: 167px;
+        }
+
+        @media (max-width: 768px) {
+            height: 111px;
+        }
     }
 
     h1, img{
