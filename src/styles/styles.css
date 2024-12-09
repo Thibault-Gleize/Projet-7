@@ -197,17 +197,40 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: 149px;
-  padding-top: 60px;
+  height: 209px;
   margin-top: 8px;
+}
+@media (max-width: 768px) {
+  footer {
+    justify-content: center;
+  }
 }
 footer img {
   width: 122px;
   height: 40px;
+  margin-top: 60px;
+}
+@media (max-width: 768px) {
+  footer img {
+    margin-top: 0;
+  }
 }
 footer p {
   color: white;
   font-size: 24px;
+  margin-bottom: 20px;
+}
+@media (max-width: 1024px) {
+  footer p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+    max-width: 134px;
+    margin-bottom: 0;
+  }
 }
 
 .slideshow {
@@ -531,4 +554,61 @@ footer p {
 }
 .error-container h2, .error-container p {
   margin-bottom: 139px;
+}
+
+.visible0 {
+  display: none;
+}
+
+.visible1 {
+  animation: show 0.25s linear;
+}
+
+.visible2 {
+  animation: mask 0.25s linear forwards;
+}
+
+.rotate1 {
+  animation: rotate-show 0.25s linear forwards;
+}
+
+.rotate2 {
+  animation: rotate-mask 0.25s linear forwards;
+}
+
+@keyframes show {
+  from {
+    transform: translateY(-50px);
+    display: none;
+  }
+  to {
+    transform: translateY(0px);
+    display: block;
+  }
+}
+@keyframes mask {
+  from {
+    transform: translateY(0px);
+    display: block;
+  }
+  to {
+    transform: translateY(-50px);
+    display: none;
+  }
+}
+@keyframes rotate-show {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate-mask {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }/*# sourceMappingURL=styles.css.map */
