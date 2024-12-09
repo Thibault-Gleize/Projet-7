@@ -25,24 +25,25 @@ export default function InfoLogement ({apptId}) {
                 <div className="appt-info__title-location">
                     <h2>{title}</h2>
                     <p>{location}</p>
-                </div>
-                <div className="appt-info__owner">
-                    <p>{ownerName}</p>
-                    <img src={ownerImg} alt={ownerName} />
-                </div>
-            </div>
-            <div className="appt-info__tags-and-rate">
-                <div className="tags">
+                    <div className="tags">
                     {tags.map((tag) => (
                         <div key={tag.toString()} className="tag">
                             <p>{tag}</p>
                         </div>
                     ))}
+                    </div>
                 </div>
-                <div className="rate">
-                        <InfoLogementRate rate={rate} />
+                <div className="appt-info__owner-and-rate">
+                    <div className="appt-info__owner">
+                        <p>{ownerName}</p>
+                        <img src={ownerImg} alt={ownerName} />
+                    </div>
+                    <div className="rate">
+                            <InfoLogementRate rate={rate} />
+                    </div>
                 </div>
             </div>
+            
             <div className="appt-info__equipement-and-description">
                 <Collapse name="Description" description={<p>{description}</p>} />
                 <Collapse name="Équipements" description={equipments.map((equipement) => <p key={equipement.toString()}>{equipement}</p>)} />
