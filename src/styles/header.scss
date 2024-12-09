@@ -4,6 +4,35 @@ header{
     justify-content:space-between;
     align-items: center;
 
+    nav{
+        display: flex;
+        gap: 37px;
+        padding-left: 5%;
+    
+        @media (max-width:768px) {
+            gap: 25px;
+        }
+    }
+
+    a{
+        color: black;
+        font-size: 24px;
+        text-decoration: none;
+        text-wrap: nowrap;
+    
+        @media (max-width:1024px) {
+            font-size: 18px;
+        }
+    
+        @media (max-width:768px) {
+            font-size: 12px;
+        }
+    }
+    
+    .active{
+        text-decoration: underline;
+    }
+
     img{
         @media (max-width:1024px) {
             width: 177px;
@@ -17,31 +46,5 @@ header{
     }
 }
 
-nav{
-    display: flex;
-    gap: 37px;
-    padding-left: 5%;
 
-    @media (max-width:768px) {
-        gap: 25px;
-    }
-}
 
-a{
-    color: black;
-    font-size: 24px;
-    text-decoration: none;
-    text-wrap: nowrap;
-
-    @media (max-width:1024px) {
-        font-size: 18px;
-    }
-
-    @media (max-width:768px) {
-        font-size: 12px;
-    }
-}
-
-.active{
-    text-decoration: underline;
-}

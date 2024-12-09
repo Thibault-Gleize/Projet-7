@@ -13,6 +13,19 @@ $card-title-color:white;
     column-gap: 60px;
     margin-bottom: 50px;
 
+    @media (max-width:1024px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 31px 25px;
+    }
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: inherit;
+        padding: 0;
+    }
+
     a{
         padding: 0px;
     }
@@ -21,8 +34,17 @@ $card-title-color:white;
 .card{
     position: relative;
     background-color: #FF6060;
-    width: 340px;
+    max-width: 340px;
     height: 340px;
+
+    @media (max-width:1024px) {
+        height: 297px;
+    }
+
+    @media (max-width: 768px) {
+        height: 255px;
+        max-width: 100%;
+    }
 
     img{
         width: 100%;

@@ -2,6 +2,11 @@
   font-family: "Medium";
   src: url("../assets/fonts/static/Montserrat-Medium.ttf");
 }
+h1, h2, h3, h4, p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 body {
   margin: 0;
   font-family: "Medium";
@@ -17,21 +22,46 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-nav {
+header nav {
   display: flex;
   gap: 37px;
+  padding-left: 5%;
 }
-
-a {
+@media (max-width: 768px) {
+  header nav {
+    gap: 25px;
+  }
+}
+header a {
   color: black;
   font-size: 24px;
   text-decoration: none;
-  padding-left: 45px;
+  text-wrap: nowrap;
 }
-
-.active {
+@media (max-width: 1024px) {
+  header a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  header a {
+    font-size: 12px;
+  }
+}
+header .active {
   text-decoration: underline;
+}
+@media (max-width: 1024px) {
+  header img {
+    width: 177px;
+    height: 57px;
+  }
+}
+@media (max-width: 768px) {
+  header img {
+    width: 145px;
+    height: 47px;
+  }
 }
 
 .banner {
@@ -41,15 +71,33 @@ a {
 }
 .banner h1 {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  top: 50px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   text-align: center;
   color: white;
   font-size: 48px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1024px) {
+  .banner h1 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 24px;
+    text-align: start;
+    margin-left: 16px;
+    text-wrap: wrap;
+    width: 68%;
+    min-width: 225px;
+    max-height: 58px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 .banner img {
   -o-object-fit: cover;
@@ -59,6 +107,16 @@ a {
   border-radius: 25px;
   filter: brightness(50%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1024px) {
+  .banner img {
+    height: 167px;
+  }
+}
+@media (max-width: 768px) {
+  .banner img {
+    height: 111px;
+  }
 }
 .banner h1, .banner img {
   stroke: black;
@@ -77,6 +135,21 @@ a {
        column-gap: 60px;
   margin-bottom: 50px;
 }
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 31px 25px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: inherit;
+    padding: 0;
+  }
+}
 .container a {
   padding: 0px;
 }
@@ -84,8 +157,19 @@ a {
 .card {
   position: relative;
   background-color: #FF6060;
-  width: 340px;
+  max-width: 340px;
   height: 340px;
+}
+@media (max-width: 1024px) {
+  .card {
+    height: 297px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    height: 255px;
+    max-width: 100%;
+  }
 }
 .card img {
   width: 100%;
@@ -126,6 +210,216 @@ footer p {
   font-size: 24px;
 }
 
+.slideshow {
+  position: relative;
+  margin-bottom: 20px;
+}
+.slideshow .appt-picture {
+  width: 100%;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slideshow .left-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+}
+.slideshow .right-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
+.slideshow p {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.appt-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.appt-info__title-location h2 {
+  color: #FF6060;
+  font-size: 36px;
+}
+.appt-info__title-location p {
+  font-size: 18px;
+}
+.appt-info__title-location p, .appt-info__title-location h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+.appt-info__owner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.appt-info__owner img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+.appt-info__owner p {
+  color: #FF6060;
+  font-size: 18px;
+  width: 93px;
+  display: flex;
+  text-align: end;
+}
+
+.appt-info__tags-and-rate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.appt-info__tags-and-rate p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  text-align: center;
+  font-size: 14px;
+  width: auto;
+  min-width: auto;
+}
+.appt-info__tags-and-rate .tags {
+  display: flex;
+  gap: 10px;
+}
+.appt-info__tags-and-rate .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #FF6060;
+  min-height: 25px;
+  height: auto;
+  padding: 3px 40px;
+  max-width: 35px;
+  border-radius: 10px;
+}
+
+.rate div {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.rate span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+.appt-info__equipement-and-description {
+  display: flex;
+  align-items: stretch;
+  gap: 76px;
+  margin-bottom: 42px;
+}
+.appt-info__equipement-and-description div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+}
+.appt-info__equipement-and-description div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FF6060;
+  height: 20px;
+  border-radius: 10px;
+  padding: 16px;
+}
+.appt-info__equipement-and-description div span {
+  background-color: #F6F6F6;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  bottom: 5px;
+  z-index: -1;
+  width: 95%;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.appt-info__equipement-and-description h2 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+.appt-info__equipement-and-description p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.appt-info__equipement-and-description .visible0 {
+  display: none;
+}
+.appt-info__equipement-and-description .visible1 {
+  animation: show 0.25s linear;
+}
+.appt-info__equipement-and-description .visible2 {
+  animation: mask 0.25s linear forwards;
+}
+.appt-info__equipement-and-description .rotate1 {
+  animation: rotate-show 0.25s linear forwards;
+}
+.appt-info__equipement-and-description .rotate2 {
+  animation: rotate-mask 0.25s linear forwards;
+}
+
+@keyframes show {
+  from {
+    transform: translateY(-50px);
+    display: none;
+  }
+  to {
+    transform: translateY(0px);
+    display: block;
+  }
+}
+@keyframes mask {
+  from {
+    transform: translateY(0px);
+    display: block;
+  }
+  to {
+    transform: translateY(-50px);
+    display: none;
+  }
+}
+@keyframes rotate-show {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotate-mask {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
 .about_container {
   margin-bottom: 30px;
 }

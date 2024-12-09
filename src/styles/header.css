@@ -4,19 +4,44 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
-nav {
+header nav {
   display: flex;
   gap: 37px;
+  padding-left: 5%;
 }
-
-a {
+@media (max-width: 768px) {
+  header nav {
+    gap: 25px;
+  }
+}
+header a {
   color: black;
   font-size: 24px;
   text-decoration: none;
-  padding-left: 45px;
+  text-wrap: nowrap;
 }
-
-.active {
+@media (max-width: 1024px) {
+  header a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  header a {
+    font-size: 12px;
+  }
+}
+header .active {
   text-decoration: underline;
+}
+@media (max-width: 1024px) {
+  header img {
+    width: 177px;
+    height: 57px;
+  }
+}
+@media (max-width: 768px) {
+  header img {
+    width: 145px;
+    height: 47px;
+  }
 }/*# sourceMappingURL=header.css.map */

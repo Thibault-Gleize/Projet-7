@@ -10,6 +10,10 @@ footer{
     padding-top: 60px;
     margin-top: 8px;
 
+    @media (max-width:768px) {
+        justify-content: inherit;
+    }
+
     img{
         width: 122px;
         height: 40px;
@@ -18,5 +22,14 @@ footer{
     p{
         color: white;
         font-size: 24px;
+
+        @media (max-width:1024px) {
+            font-size: 18px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 12px;
+            max-width: 134px;
+        }
     }
 }

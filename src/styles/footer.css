@@ -8,6 +8,11 @@ footer {
   padding-top: 60px;
   margin-top: 8px;
 }
+@media (max-width: 768px) {
+  footer {
+    justify-content: inherit;
+  }
+}
 footer img {
   width: 122px;
   height: 40px;
@@ -15,4 +20,15 @@ footer img {
 footer p {
   color: white;
   font-size: 24px;
+}
+@media (max-width: 1024px) {
+  footer p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  footer p {
+    font-size: 12px;
+    max-width: 134px;
+  }
 }/*# sourceMappingURL=footer.css.map */
