@@ -74,7 +74,7 @@
 .appt-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .appt-info__title-location h2 {
@@ -110,6 +110,7 @@
 .appt-info__owner-and-rate {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: space-around;
 }
 .appt-info__owner-and-rate p {
@@ -186,6 +187,9 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
+}
+.appt-info__equipement-and-description div .visible0 {
+  display: none;
 }
 .appt-info__equipement-and-description h2 {
   text-align: center;

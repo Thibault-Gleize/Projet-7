@@ -80,7 +80,7 @@ $title-color: white;
 .appt-info{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .appt-info__title-location{
@@ -121,6 +121,7 @@ $title-color: white;
 .appt-info__owner-and-rate{
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     justify-content: space-around;
 
     p{
@@ -205,6 +206,10 @@ $title-color: white;
             display: flex;
             flex-direction: column;
             align-items: stretch;
+        }
+
+        .visible0{
+            display: none;
         }
     }
 
