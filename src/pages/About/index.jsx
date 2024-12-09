@@ -1,6 +1,7 @@
 import Banner from "../../components/Banner"
 import Collapse from "../../components/Collapse"
 
+// Table contenant les informations de la page a propos
 const aboutInfo = [
     {
         "title" : "Fiabilité",
@@ -22,7 +23,6 @@ const aboutInfo = [
 
 
 export default function Apropos () {
-
     return (
         <main>
             <Banner />

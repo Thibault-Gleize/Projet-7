@@ -9,8 +9,7 @@ export default function Slideshow ({apptId}) {
     let apptPictures = apptId[picturesList]
     // State qui seront utilisé pour l'indice du tableau et afficher le nombre d'image
     let [Number, SetNumber] = useState(0)
-
-
+    
     let increase = () => {
         Number === apptPictures.length - 1 ? SetNumber(Number = 0) : SetNumber(Number + 1)
     }
