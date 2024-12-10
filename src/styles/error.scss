@@ -1,4 +1,4 @@
-$header-color:#FF6060;
+$title-color:#FF6060;
 $text-color:#FF6060;
 $link-color:black;
 
@@ -7,20 +7,36 @@ $link-color:black;
     flex-direction: column;
     align-items: center;
 
-    h2, p{
-        margin-block-start: 0;
-        margin-block-end: 0;
-    }
-
     h2{
         font-size: 288px;
-        color: $header-color;
-        margin-top: 139px;
+        color: $title-color;
+        margin-top: 89px;
+
+        @media (max-width:1024px) {
+            font-size: 192px;
+            margin-top: 76px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 96px;
+            margin-top: 63px;
+        }
     }
 
     p{
         font-size: 36px;
         color: $text-color;
+
+        @media (max-width:1024px) {
+            font-size: 27px;
+            height: 22px;
+            width: 50%;
+            text-align: center;
+        }
+
+        @media (max-width:768px) {
+            font-size: 18px;
+        }
     }
 
     a{
@@ -28,10 +44,26 @@ $link-color:black;
         color: $link-color;
         padding-left: 0;
         margin-bottom: 131px;
+        font-size: 18px;
 
+        @media (max-width:1024px) {
+            font-size: 16px;
+        }
+
+        @media (max-width:768px) {
+            font-size: 14px;
+        }
     }
 
     h2, p{
         margin-bottom: 139px;
+
+        @media (max-width:1024px) {
+            margin-bottom: 126px;
+        }
+
+        @media (max-width:768px) {
+            margin-bottom: 113px;
+        }
     }
 }
