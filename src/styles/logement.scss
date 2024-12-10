@@ -13,7 +13,7 @@ $title-color: white;
         object-fit: cover;
 
         @media (max-width:1024px) {
-
+           height: 335px; 
         }
 
         @media (max-width:768px) {
@@ -71,6 +71,10 @@ $title-color: white;
         color: $slideshow-text-color;
         font-size: 18px;
 
+        @media (max-width:1024px) {
+            font-size: 14px;
+        }
+
         @media (max-width:768px) {
             display: none;
         }
@@ -95,6 +99,10 @@ $title-color: white;
         color: $primary-color;
         font-size: 36px;
 
+        @media (max-width:1024px) {
+            font-size: 27px;
+        }
+
         @media (max-width:768px) {
             font-size: 18px;
             margin-bottom: 5px;
@@ -104,6 +112,11 @@ $title-color: white;
     p{
         font-size: 18px;
         margin-bottom: 27px;
+
+        @media (max-width:1024px) {
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
 
         @media (max-width:768px) {
             margin-bottom: 10px;
@@ -125,8 +138,13 @@ $title-color: white;
         min-height: 25px;
         height: auto;
         padding: 3px 40px;
-        max-width: 35px;
+        max-width: 70px;
         border-radius: 10px;
+
+        @media (max-width:1024px) {
+            padding: 3px 32px;
+            min-height: 20px;
+        }
     
         @media (max-width:768px) {
             padding: 3px 24.5px;
@@ -135,6 +153,10 @@ $title-color: white;
     
         p{
             margin-bottom: 0;
+
+            @media (max-width:1024px) {
+                font-size:14px;
+            }
     
             @media (max-width:768px) {
                 font-size: 10px;
@@ -158,12 +180,12 @@ $title-color: white;
         margin-top: 16px;
     }
 
-    p{
-        text-align: center;
-        font-size: 14px;
-        width: auto;
-        min-width: auto;
-    }
+    // p{
+    //     text-align: center;
+    //     font-size: 14px;
+    //     width: auto;
+    //     min-width: auto;
+    // }
 
     .appt-info__owner{
         display: flex;
@@ -179,6 +201,11 @@ $title-color: white;
             width: 64px;
             height: 64px;
 
+            @media (max-width:1024px) {
+                width: 48px;
+                height: 48px;
+            }
+
             @media (max-width:768px) {
                 width: 32px;
                 height: 32px;
@@ -192,6 +219,11 @@ $title-color: white;
             display: flex;
             justify-content: end;
             text-align: end;
+
+            @media (max-width:1024px) {
+                width: 67px;
+                font-size: 15px;
+            }
 
             @media (max-width:768px) {
                 width: 45px;
@@ -220,12 +252,22 @@ $title-color: white;
             width: 36px;
             height: 36px;
 
+            @media (max-width:1024px) {
+                width: 27px;
+                height: 27px;
+            }
+
             @media (max-width:768px) {
                 width: 18px;
                 height: 18px;
             }
 
             img{
+                @media (max-width:1024px) {
+                    width: 27px;
+                    height: 27px;
+                }
+
                 @media (max-width:768px) {
                     width: 18px;
                     height: 18px;
@@ -267,6 +309,11 @@ $title-color: white;
             border-radius: 10px;
             padding: 16px;
 
+            @media (max-width:1024px) {
+                height: 14px;
+                padding: 13px;
+            }
+
             @media (max-width:768px) {
                 padding: 11px;
                 height: 8px;
@@ -287,6 +334,10 @@ $title-color: white;
             align-items: stretch;
             transform-origin: top center;
 
+            @media (max-width:1024px) {
+                padding: 13px;
+            }
+
             @media (max-width:768px) {
                 padding: 11px;
                 width: 97%;
@@ -303,19 +354,31 @@ $title-color: white;
         color: $title-color;
         font-size: 24px;
 
+        @media (max-width:1024px) {
+            font-size: 18px;
+        }
+
         @media (max-width:768px) {
             font-size: 13px;
         }
     }
 
     p{
+        @media (max-width:1024px) {
+            font-size: 14px;
+        }
 
         @media (max-width:768px) {
             font-size: 12px;
         }
     }
-
+    // Flèche permettant d'afficher ou réduire la description ou équipement
     img{
+        @media (max-width:1024px) {
+            width: 20px;
+            height: 11px;
+        }
+
         @media (max-width:768px) {
             width: 16px;
             height: 9px;

@@ -50,6 +50,7 @@
   z-index: -1;
   width: 78%;
   padding: 16px;
+  transform-origin: top center;
 }
 @media (max-width: 1024px) {
   .about_container span {
