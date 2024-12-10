@@ -1,0 +1,67 @@
+.container {
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  padding: 56px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 31px 25px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: inherit;
+    padding: 0;
+  }
+}
+.container a {
+  padding: 0px;
+}
+
+.card {
+  position: relative;
+  background-color: #FF6060;
+  max-width: 340px;
+  height: 340px;
+}
+@media (max-width: 1024px) {
+  .card {
+    height: 297px;
+  }
+}
+@media (max-width: 768px) {
+  .card {
+    height: 255px;
+    max-width: 100%;
+  }
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card h2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  color: white;
+  margin: 0px 20px 20px 20px;
+}
+
+.card, img {
+  border-radius: 10px;
+}/*# sourceMappingURL=card.css.map */

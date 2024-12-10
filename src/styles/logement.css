@@ -1,0 +1,383 @@
+.slideshow {
+  position: relative;
+  margin-bottom: 20px;
+}
+.slideshow .appt-picture {
+  width: 100%;
+  height: 415px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1024px) {
+  .slideshow .appt-picture {
+    height: 335px;
+  }
+}
+@media (max-width: 768px) {
+  .slideshow .appt-picture {
+    height: 255px;
+  }
+}
+.slideshow .left-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 20px;
+}
+@media (max-width: 1024px) {
+  .slideshow .left-arrow {
+    width: 35px;
+    height: 59px;
+    margin: auto 10px;
+  }
+}
+@media (max-width: 768px) {
+  .slideshow .left-arrow {
+    width: 12px;
+    height: 20px;
+    margin: auto 5px;
+  }
+}
+.slideshow .right-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 20px;
+}
+@media (max-width: 1024px) {
+  .slideshow .right-arrow {
+    width: 35px;
+    height: 59px;
+    margin: auto 10px;
+  }
+}
+@media (max-width: 768px) {
+  .slideshow .right-arrow {
+    width: 12px;
+    height: 20px;
+    margin: auto 5px;
+  }
+}
+.slideshow p {
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+@media (max-width: 1024px) {
+  .slideshow p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .slideshow p {
+    display: none;
+  }
+}
+
+.appt-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .appt-info {
+    flex-direction: column;
+  }
+}
+
+.appt-info__title-location-tags h2 {
+  color: #FF6060;
+  font-size: 36px;
+}
+@media (max-width: 1024px) {
+  .appt-info__title-location-tags h2 {
+    font-size: 27px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__title-location-tags h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
+.appt-info__title-location-tags p {
+  font-size: 18px;
+  margin-bottom: 27px;
+}
+@media (max-width: 1024px) {
+  .appt-info__title-location-tags p {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__title-location-tags p {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+}
+.tags .tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #FF6060;
+  min-height: 25px;
+  height: auto;
+  padding: 3px 40px;
+  max-width: 70px;
+  border-radius: 10px;
+}
+@media (max-width: 1024px) {
+  .tags .tag {
+    padding: 3px 32px;
+    min-height: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .tags .tag {
+    padding: 3px 24.5px;
+    min-height: 12px;
+  }
+}
+.tags .tag p {
+  margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+  .tags .tag p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .tags .tag p {
+    font-size: 10px;
+  }
+}
+
+.appt-info__owner-and-rate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+}
+.appt-info__owner-and-rate .appt-info__owner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .appt-info__owner {
+    order: 2;
+  }
+}
+.appt-info__owner-and-rate .appt-info__owner img {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
+@media (max-width: 1024px) {
+  .appt-info__owner-and-rate .appt-info__owner img {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .appt-info__owner img {
+    width: 32px;
+    height: 32px;
+  }
+}
+.appt-info__owner-and-rate .appt-info__owner p {
+  color: #FF6060;
+  font-size: 18px;
+  width: 93px;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+}
+@media (max-width: 1024px) {
+  .appt-info__owner-and-rate .appt-info__owner p {
+    width: 67px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .appt-info__owner p {
+    width: 45px;
+    font-size: 12px;
+    text-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .rate {
+    order: 1;
+  }
+}
+.appt-info__owner-and-rate .rate div {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+.appt-info__owner-and-rate .rate span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+@media (max-width: 1024px) {
+  .appt-info__owner-and-rate .rate span {
+    width: 27px;
+    height: 27px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .rate span {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .appt-info__owner-and-rate .rate span img {
+    width: 27px;
+    height: 27px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__owner-and-rate .rate span img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.appt-info__equipement-and-description {
+  display: flex;
+  align-items: stretch;
+  gap: 76px;
+  margin-bottom: 42px;
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.appt-info__equipement-and-description div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 95%;
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description div {
+    width: 97%;
+  }
+}
+.appt-info__equipement-and-description div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #FF6060;
+  height: 20px;
+  border-radius: 10px;
+  padding: 16px;
+}
+@media (max-width: 1024px) {
+  .appt-info__equipement-and-description div div {
+    height: 14px;
+    padding: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description div div {
+    padding: 11px;
+    height: 8px;
+  }
+}
+.appt-info__equipement-and-description div span {
+  background-color: #F6F6F6;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  bottom: 5px;
+  z-index: -1;
+  width: 95%;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transform-origin: top center;
+}
+@media (max-width: 1024px) {
+  .appt-info__equipement-and-description div span {
+    padding: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description div span {
+    padding: 11px;
+    width: 97%;
+  }
+}
+.appt-info__equipement-and-description div .visible0 {
+  display: none;
+}
+.appt-info__equipement-and-description h2 {
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+@media (max-width: 1024px) {
+  .appt-info__equipement-and-description h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description h2 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 1024px) {
+  .appt-info__equipement-and-description p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .appt-info__equipement-and-description img {
+    width: 20px;
+    height: 11px;
+  }
+}
+@media (max-width: 768px) {
+  .appt-info__equipement-and-description img {
+    width: 16px;
+    height: 9px;
+  }
+}/*# sourceMappingURL=logement.css.map */

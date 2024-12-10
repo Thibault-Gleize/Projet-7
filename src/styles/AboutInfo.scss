@@ -5,6 +5,14 @@ $title-color:white;
 .about_container{
     margin-bottom: 30px;
 
+    @media (max-width:768px) {
+        margin-bottom: 31px;
+    }
+
+    @media (max-width:768px) {
+        margin-bottom: 19px;
+    }
+
     div{
         display: flex;
         flex-direction: column;
@@ -23,10 +31,14 @@ $title-color:white;
 
             @media (max-width:1024px) {
                 width: 84%;
+                height: 15px;
+                padding: 13px;
             }
 
             @media (max-width:768px) {
                 width: 90%;
+                height: 10px;
+                padding: 10px;
             }
         }
     }
@@ -56,12 +68,12 @@ $title-color:white;
         transform-origin: top center;
 
         @media (max-width:1024px) {
-            width: 84%;
+            width: 83%;
             font-size: 17px;
         }
 
         @media (max-width:768px) {
-            width: 90%;
+            width: 86%;
             font-size: 12px;
         }
         
