@@ -23,6 +23,7 @@ export default function Slideshow ({apptId}) {
             {/* <a href={apptPictures[Number]}> */}
                 <img className="appt-picture" src={apptPictures[Number]} alt="photos de l'appartement" />
             {/* </a> */}
+            {/* Vérification si longueur tableau supérieur a 1 pour afficher flèche et texte */}
             {apptPictures.length !== 1 && <img className="left-arrow" onClick={decreased} src={leftArrow} alt="flèche de défilement vers la gauche" />}
             {apptPictures.length !== 1 && <img className="right-arrow" onClick={increase} src={rightArrow} alt="flèche de défilement vers la droite" />}
             {apptPictures.length !== 1 && <p>{Number + 1}/{apptPictures.length}</p>}
