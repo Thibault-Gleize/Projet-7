@@ -1,4 +1,4 @@
-import { dataAppt } from "../../datas/datasFile"
+import dataAppt from "../../datas/datasAppts.json"
 import { Link } from "react-router"
 
 export default function Card () {
